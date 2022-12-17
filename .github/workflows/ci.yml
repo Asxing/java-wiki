@@ -1,0 +1,35 @@
+name: ci
+on:
+  push:
+    branches:
+      - master
+      - main
+permissions:
+  contents: write
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+      - run: pip install mkdocs-material
+      - run: mkdocs build --site-dir public
+      - name: copy file via ssh key
+        uses: appleboy/scp-action@master
+        with:
+          #需要部署的文件地址
+          source: 'public/*'
+          # SSH address  服务器地址
+          host: ${{ secrets.REMOTE_HOST }}
+          # Remote dir path  服务器下部署文件存放路径
+          target: ${{ secrets.REMOTE_PATH }}
+          # SSH Port  服务器端口
+          port: 22
+          # SSH User name   用户名
+          username: ${{ secrets.USER_NAME }}
+          # SSH User password  用户密码
+          # password: ${{ secrets.PASSWORD }}
+          # key  密匙
+          key: ${{ secrets.SSH_KEY }}

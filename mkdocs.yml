@@ -1,0 +1,6 @@
+site_name: Java Wiki
+site_url: https://java.wiki/
+nav:
+    - Home: index.md
+    - About: about.md
+theme: material

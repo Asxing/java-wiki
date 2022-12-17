@@ -1,2 +1,2 @@
 # java-wiki
-https::/java.wiki
+https://java.wiki
