@@ -18,7 +18,7 @@ jobs:
         with:
           key: ${{ github.ref }}
           path: .cache
-      - run: pip3 install jieba pillow cairosvg mkdocs-git-revision-date-localized-plugin mkdocs-git-committers-plugin-2 mkdocs-git-authors-plugin mkdocs-minify-plugin mkdocs-redirects
+      - run: pip3 install jieba pillow cairosvg mkdocs-git-revision-date-localized-plugin mkdocs-git-committers-plugin-2 mkdocs-git-authors-plugin mkdocs-minify-plugin mkdocs-redirects lxml
       - run: pip install mkdocs-material
       - run: mkdocs build --site-dir public
       - name: copy file via ssh key
