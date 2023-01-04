@@ -49,38 +49,38 @@ theme:
     code: 'Roboto Mono'
 extra:
   homepage: https://java.wiki/
-  consent:
+#  consent:
 #    title: Cookie consent
 #    description: >-
 #      We use cookies to recognize your repeated visits and preferences, as well
 #      as to measure the effectiveness of our documentation and whether users
 #      find what they're searching for. With your consent, you're helping us to
 #      make our documentation better.
-    analytics:
-      provider: google
-      property: G-650SLTWWBT
-      feedback:
-        title: Was this page helpful?
-        ratings:
-          - icon: material/emoticon-happy-outline
-            name: This page was helpful
-            data: 1
-            note: >-
-              Thanks for your feedback!
-          - icon: material/emoticon-sad-outline
-            name: This page could be improved
-            data: 0
-            note: >-
-              Thanks for your feedback! Help us improve this page by
-              using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
-    social:
-      - icon: fontawesome/brands/github
-        link: https://github.com/asxing
-        name: Asxing
-    utteranc:
-      repo: asxing/java-wiki
-      issueTerm: pathname
-      theme: github-light
+  analytics:
+    provider: google
+    property: G-650SLTWWBT
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >-
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/asxing
+      name: Asxing
+  utteranc:
+    repo: asxing/java-wiki
+    issueTerm: pathname
+    theme: github-light
 # 图标
 icon:
   admonition:
