@@ -11,6 +11,9 @@ copyright: 'Copyright &copy; 2022 - 2023 Asxing'
 
 nav:
   - Home: index.md
+  - Arch:
+    - arch/index.md
+    - '重构2': arch/refactor2.md
   - About: about.md
 theme:
   name: material
@@ -127,7 +130,9 @@ markdown_extensions:
   - footnotes
   - md_in_html
   - toc:
-      permalink: true
+      permalink: "#"
+      baselevel: 2
+      separator: "_"
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem:

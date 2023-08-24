@@ -2,20 +2,20 @@
 
 本地运行命令：
 
-**Mac Install 环境**
+**Mac Install Env**
 ```shell
 brew install cairo
 brew install pango
-
+brew install python-tk@3.10
 ```
 
-**组件升级**
+**Material Upgrade**
 
 参考：https://squidfunk.github.io/mkdocs-material/upgrade/
 ```shell
-pip show mkdocs-material
-pip install --upgrade pip
-pip install --upgrade --force-reinstall mkdocs-material
+pip3 show mkdocs-material
+pip3 install --upgrade pip
+pip3 install --upgrade --force-reinstall mkdocs-material
 ```
 
 
